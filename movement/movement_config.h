@@ -28,15 +28,21 @@
 #include "movement_faces.h"
 
 const watch_face_t watch_faces[] = {
-    simple_clock_face,
-    world_clock_face,
-    sunrise_sunset_face,
-    moon_phase_face,
-    stopwatch_face,
+	  clock_face,
+	  world_clock2_face,
+	  alarm_face,
+	  timer_face,
+	  stock_stopwatch_face,
+	  probability_face,
+	  sunrise_sunset_face,
+	  moon_phase_face,
+	  breathing_face,
+	  thermistor_readout_face,
     preferences_face,
-    set_time_face,
-    thermistor_readout_face,
-    voltage_face
+	  save_load_face,
+	  set_time_face,
+	  finetune_face,
+	  nanosec_face,
 };
 
 #define MOVEMENT_NUM_FACES (sizeof(watch_faces) / sizeof(watch_face_t))
@@ -47,19 +53,19 @@ const watch_face_t watch_faces[] = {
  * Some folks also like to use this to hide the preferences and time set faces from the normal rotation.
  * If you don't want any faces to be excluded, set this to 0 and a long Mode press will have no effect.
  */
-#define MOVEMENT_SECONDARY_FACE_INDEX (MOVEMENT_NUM_FACES - 2) // or (0)
+#define MOVEMENT_SECONDARY_FACE_INDEX (MOVEMENT_NUM_FACES - 5) // or (0)
 
 /* Custom hourly chime tune. Check movement_custom_signal_tunes.h for options. */
-#define SIGNAL_TUNE_DEFAULT
+#define SIGNAL_TUNE_ZELDA_SECRET
 
 /* Determines the intensity of the led colors
  * Set a hex value 0-15 with 0x0 being off and 0xF being max intensity
  */
-#define MOVEMENT_DEFAULT_GREEN_COLOR 0xF
-#define MOVEMENT_DEFAULT_RED_COLOR 0x0
+#define MOVEMENT_DEFAULT_GREEN_COLOR 0x10
+#define MOVEMENT_DEFAULT_RED_COLOR 0xF
 
 /* Set to true for 24h mode or false for 12h mode */
-#define MOVEMENT_DEFAULT_24H_MODE false
+#define MOVEMENT_DEFAULT_24H_MODE true
 
 /* Enable or disable the sound on mode button press */
 #define MOVEMENT_DEFAULT_BUTTON_SOUND true
@@ -93,6 +99,6 @@ const watch_face_t watch_faces[] = {
  * 2: 3 seconds
  * 3: 5 seconds
  */
-#define MOVEMENT_DEFAULT_LED_DURATION 1
+#define MOVEMENT_DEFAULT_LED_DURATION 3
 
 #endif // MOVEMENT_CONFIG_H_
