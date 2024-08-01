@@ -61,14 +61,14 @@ const watch_face_t watch_faces[] = {
 /* Determines the intensity of the led colors
  * Set a hex value 0-15 with 0x0 being off and 0xF being max intensity
  */
-#define MOVEMENT_DEFAULT_GREEN_COLOR 0x10
+#define MOVEMENT_DEFAULT_GREEN_COLOR 0x05
 #define MOVEMENT_DEFAULT_RED_COLOR 0xF
 
 /* Set to true for 24h mode or false for 12h mode */
 #define MOVEMENT_DEFAULT_24H_MODE true
 
 /* Enable or disable the sound on mode button press */
-#define MOVEMENT_DEFAULT_BUTTON_SOUND true
+#define MOVEMENT_DEFAULT_BUTTON_SOUND false
 
 /* Set the timeout before switching back to the main watch face
  * Valid values are:
