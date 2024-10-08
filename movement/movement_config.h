@@ -61,7 +61,7 @@ const watch_face_t watch_faces[] = {
 /* Determines the intensity of the led colors
  * Set a hex value 0-15 with 0x0 being off and 0xF being max intensity
  */
-#define MOVEMENT_DEFAULT_GREEN_COLOR 0x05
+#define MOVEMENT_DEFAULT_GREEN_COLOR 0x5
 #define MOVEMENT_DEFAULT_RED_COLOR 0xF
 
 /* Set to true for 24h mode or false for 12h mode */
